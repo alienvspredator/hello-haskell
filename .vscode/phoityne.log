@@ -1,0 +1,8 @@
+2019-09-07 08:29:27 [ThreadId 7] ERROR phoityne - "\"extractSourcePosition\" (line 2, column 6):\nunexpected end of input\nexpecting \"Stopped at \" or \"Stopped in \" [INPUT]120\nH>>= "
+2019-09-07 08:29:58 [ThreadId 7] ERROR phoityne - "\"extractSourcePosition\" (line 2, column 6):\nunexpected end of input\nexpecting \"Stopped at \" or \"Stopped in \" [INPUT]120\nH>>= "
+2019-09-07 18:18:27 [ThreadId 7] ERROR phoityne - "\"extractSourcePosition\" (line 2, column 6):\nunexpected end of input\nexpecting \"Stopped at \" or \"Stopped in \" [INPUT]0\nH>>= "
+2019-09-07 18:47:45 [ThreadId 7] ERROR phoityne - "\"extractSourcePosition\" (line 2, column 6):\nunexpected end of input\nexpecting \"Stopped at \" or \"Stopped in \" [INPUT](Succ Zero)\nH>>= "
+2019-09-07 18:55:29 [ThreadId 12] ERROR phoityne - load file fail.[/Users/sheva/Library/Mobile Documents/com~apple~CloudDocs/Development/Haskell/hello-world/src/Nat.hs] <stdout>: hPutBuf: resource vanished (Broken pipe)
+2019-09-07 18:55:30 [ThreadId 12] ERROR phoityne - load file fail.[/Users/sheva/Library/Mobile Documents/com~apple~CloudDocs/Development/Haskell/hello-world/app/Main.hs] <stdout>: hPutBuf: resource vanished (Broken pipe)
+2019-09-07 18:55:30 [ThreadId 13] ERROR phoityne - load file fail.[/Users/sheva/Library/Mobile Documents/com~apple~CloudDocs/Development/Haskell/hello-world/src/Nat.hs] <stdout>: hPutBuf: resource vanished (Broken pipe)
+2019-09-07 18:55:30 [ThreadId 13] ERROR phoityne - load file fail.[/Users/sheva/Library/Mobile Documents/com~apple~CloudDocs/Development/Haskell/hello-world/app/Main.hs] <stdout>: hPutBuf: resource vanished (Broken pipe)
