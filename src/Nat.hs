@@ -5,7 +5,7 @@ data Nat = Zero | Succ Nat
 
 instance Num Nat where
     (+) a Zero     = a
-    (+) a (Succ b) = Succ (a + b)
+    (+) a (Succ b) = Succ ((max a b) + (min a b))
     negate _ = error "Negate is undefined for Nat"
     (*) a Zero     = Zero
     (*) a (Succ b) = a + (a * b)
@@ -24,3 +24,11 @@ beside a b = a == Succ b || b == Succ a
 
 beside2 :: Nat -> Nat -> Bool
 beside2 a b = a == Succ (b + 2) || b == Succ (a + 2)
+
+pow :: Nat -> Nat -> Nat
+pow a Zero     = 1
+pow a (Succ b) = a * (pow a b)
+
+pred :: Nat -> Nat
+pred x = y where (Succ y) = x
+-- pred x = let (Succ y) = x in y

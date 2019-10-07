@@ -23,6 +23,21 @@ main = hspec $ do
                                )
                            )
             `shouldBe` (6 :: Nat)
+        describe "leaves"
+            $          it "returns list of elements in leaves"
+            $          leaves
+                           (BinTree
+                               ( BinTree (BinTree (List 5, List 9), List 9)
+                               , BinTree
+                                   ( BinTree (List 1, List 9)
+                                   , BinTree
+                                       ( BinTree (List 9, List 3)
+                                       , BinTree (BinTree (List 9, List 3), List 4)
+                                       )
+                                   )
+                               )
+                           )
+            `shouldBe` [5, 9, 9, 1, 9, 9, 3, 9, 3, 4]
         describe "reverseBinTree"
             $          it "can reverces BinTree"
             $          reverseBinTree (BinTree (List 5, List 9))
@@ -102,8 +117,19 @@ main = hspec $ do
                 `shouldBe` Zero
         describe "natToInteger" $ do
             context "when Zero"
-                $ it "converts Nat to integer"
-                $ natToInteger Zero `shouldBe` 0
+                $          it "converts Nat to integer"
+                $          natToInteger Zero
+                `shouldBe` 0
             context "when not Zero"
-                $ it "converts Nat to integer"
-                $ natToInteger (Succ (Succ Zero)) `shouldBe` 2
+                $          it "converts Nat to integer"
+                $          natToInteger (Succ (Succ Zero))
+                `shouldBe` 2
+        describe "pow" $ do
+            context "when Zero"
+                $          it "returns the base to the exponent power"
+                $          pow (9 :: Nat) Zero
+                `shouldBe` 1
+            context "when not Zero"
+                $          it "returns the base to the exponent power"
+                $          pow (2 :: Nat) (7 :: Nat)
+                `shouldBe` (128 :: Nat)
